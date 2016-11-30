@@ -1,5 +1,5 @@
-import socket from *
-import time from ctime
+from socket import *
+from time import ctime
 
 HOST = ''
 PORT = 21567
@@ -7,7 +7,7 @@ BUFSIZ = 1024
 ADDR = (HOST,PORT)
 
 tcpSerSock = socket(AF_INET,SOCK_STREAM)
-tcpSerSock.blind(ADDR)
+tcpSerSock.bind(ADDR)
 tcpSerSock.listen(5)
 
 while True:
